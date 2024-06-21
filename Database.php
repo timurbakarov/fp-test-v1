@@ -101,7 +101,7 @@ class Database implements DatabaseInterface
                         replace: '',
                     );
 
-                    $charIndex = $openBracketPosition - 1;
+                    $charIndex = $openBracketPosition - 2;
                 } else {
                     $query = $this->substrReplace(
                         input: $query,
@@ -117,7 +117,7 @@ class Database implements DatabaseInterface
                         replace: '',
                     );
 
-                    $charIndex = $closeBracketPosition - 3;
+                    $charIndex = $closeBracketPosition - 2;
                 }
 
                 $openBracketPosition = null;
